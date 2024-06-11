@@ -1,0 +1,14 @@
+body {
+  background-color: #AAAA76;
+}
+
+.blink {
+  animation: blinker 1.5s linear infinite;
+  text-decoration: overline underline wavy rgb(255, 255, 0);
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0.5;
+  }
+}
