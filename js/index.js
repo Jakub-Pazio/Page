@@ -6,22 +6,32 @@ const bg_button = document.getElementById("set_bc");
 
 let counter_val = 0;
 
-const render_counter = () => {
+const renderCounter = () => {
     c_node.innerHTML = counter_val;
 }
 
+const setBGColor = () => {
+    const user_color = bg_text.value;
+    document.body.style.background = user_color;
+}
 
-inc_b.addEventListener('click', () => {
+
+inc_b.addEventListener('mousedown', () => {
     counter_val++;
-    render_counter();
+    renderCounter();
 });
 
-dec_b.addEventListener('click', () => {
+dec_b.addEventListener('mousedown', () => {
     counter_val--;
-    render_counter();
+    renderCounter();
 });
 
 bg_button.addEventListener('click', () => {
-    const user_color = bg_text.value;
-    document.body.style.background = user_color;
+    setBGColor();
 });
+
+addEventListener('keydown', (event) => {
+    if (event.key === "Enter") {
+        setBGColor();
+    }
+})
