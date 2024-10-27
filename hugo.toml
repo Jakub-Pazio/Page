@@ -1,5 +1,5 @@
 #baseurl      = "https://jakub-pazio.github.io/Page/"
-baseurl      = "localhost"
+baseurl      = "https://jakubpazio.xyz"
 title        = "Blog"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
@@ -48,7 +48,7 @@ paginate     = 10
 
     [languages.en.params.logo]
       logoText = "cat ideas.md"
-      logoHomeLink = "/Page"
+      logoHomeLink = "/"
     # or
     #
     # path = "/img/your-example-logo.svg"
