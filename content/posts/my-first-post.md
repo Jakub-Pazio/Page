@@ -10,4 +10,4 @@ tags:
 
 ## Hello World!
 
-First post just to test if all is working.
+Look mum own domain!
