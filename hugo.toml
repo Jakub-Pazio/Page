@@ -1,61 +1,42 @@
 #baseurl      = "https://jakub-pazio.github.io/Page/"
-baseurl      = "https://jakubpazio.xyz"
-title        = "Blog"
+baseurl = "https://jakubpazio.xyz"
+title = "my part of internet"
 languageCode = "en-us"
-theme        = "hello-friend-ng"
-paginate     = 10
+theme = "digitalgarden"
+pagination.pagerSize = 10
 
 [params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04"
+dateform = "Jan 2, 2006"
+dateformShort = "Jan 2"
+dateformNum = "2006-01-02"
+dateformNumTime = "2006-01-02 15:04"
+enableSearch = true
 
-  # Subtitle for home
-  homeSubtitle = "🍲 -> ☕ -> λ"
-
-  # Set disableReadOtherPosts to true in order to hide the links to other posts.
-  disableReadOtherPosts = false
-
-  # Enable sharing buttons, if you like
-  enableSharingButtons = false
-  
-  # Show a global language switcher in the navigation bar
-  enableGlobalLanguageMenu = false
-
-  # Eable switch theme: light | dark
-  enableThemeToggle = true
-
-  # Metadata mostly used in document's head
-  description = "My new homepage or blog"
-  keywords = "homepage, blog"
-  images = [""]
+# Metadata mostly used in document's head
+description = "My new homepage or blog"
+keywords = "homepage, blog"
+images = [""]
 
 [taxonomies]
-    category = "blog"
-    tag      = "tags"
-    series   = "series"
+category = "blog"
+tag = "tags"
+series = "series"
 
 [languages]
-  [languages.en]
-    title = "JP"
-    keywords = ""
-    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
-    readOtherPosts = "Read other posts"
+[languages.en]
+title = "🐲"
+keywords = ""
+copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+readOtherPosts = "Read other posts"
 
-  [languages.en.params]
-    subtitle  = ""
+# And you can even create generic menu
+[[menu.main]]
+weight = 1
+name = "Index"
+url = "/"
 
-    [languages.en.params.logo]
-      logoText = "drop_prod.sh"
-      logoHomeLink = "/"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
 
-  # And you can even create generic menu
-  [[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
-    url        = "/posts"
+[[menu.main]]
+weight = 2
+name = "Blog"
+url = "/articles"
