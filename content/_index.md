@@ -2,6 +2,6 @@
 title: Homepage
 ---
 
-# Hello
+# 👋
 
-👋
+**"Writing is thinking on paper."** or something like this.

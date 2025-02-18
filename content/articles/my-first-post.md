@@ -1,12 +1,12 @@
 ---
-title: "#0"
+title: Hello World
 date: 2024-07-07T14:41:24+02:00
-draft: false
-toc: false
-images:
-tags:
-  - HelloWorld
+draft: "false"
 ---
+
+## Hello World!
+
+Until I hack together my own static site generator this page is generated using [Hugo](https://gohugo.io/), with [this theme](https://github.com/apvarun/digital-garden-hugo-theme).
 
 
 ```Go
